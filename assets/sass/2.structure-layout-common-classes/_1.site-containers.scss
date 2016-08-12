@@ -1,0 +1,28 @@
+/* ## Site Containers
+--------------------------------------------- */
+.site-container {
+  max-height: 100vh;
+}
+
+.site-inner,
+.wrap {
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1340px) {
+    max-width: 100%;
+  }
+}
+
+.site-inner {
+  clear: both;
+  word-wrap: break-word;
+  background-color: $jungsik;
+  color: $white;
+  font-size: 1.2rem;
+  min-height: 75vh;
+  text-align: center;
+}
+
+.landing-page .site-inner {
+  max-width: 800px;
+}

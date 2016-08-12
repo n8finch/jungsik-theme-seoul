@@ -1,0 +1,81 @@
+/* ## Title Area
+--------------------------------------------- */
+
+.title-area {
+  float: left;
+  padding: 10px 0;
+  width: 300px;
+
+  .links-before-header {
+    width: 100%;
+
+    .language-links{
+      float: left;
+      color: $jungsik;
+      font-size: 1.2rem;
+      margin-right: 10px;
+    }
+    .facebook-links {
+      float: right;
+    }
+  }
+}
+
+.header-full-width .title-area {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 7px;
+  clear: both;
+
+  a,
+  a:hover,
+  a:focus {
+    color: $jungsik;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.header-image {
+
+  .title-area {
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 0;
+  }
+
+  .site-title > a {
+    background-position: center !important;
+    background-size: contain !important;
+    float: left;
+    min-height: 80px;
+    width: 100%;
+  }
+
+  .site-description,
+  .site-title {
+    display: block;
+    text-indent: -9999px;
+  }
+}
+
+.site-description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: .00000000001px;
+  text-indent: -999999px;
+}
+
+.site-description,
+.site-title {
+  margin-bottom: 0;
+}
+
+
