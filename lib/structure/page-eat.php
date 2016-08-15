@@ -92,8 +92,6 @@ function add_bar_page_contents() {
 	 */
 	require __DIR__ . '/eat-page-template-parts/lunch-choice-menu.php';
 
-	echo '<img class="eat-page-icons" src="' . $lunch_choice_menu_icon_middle . '"/>';
-
 	/**
 	 * Insert Lunch Choice Menu Group Template Part
 	 */
@@ -114,7 +112,6 @@ function add_bar_page_contents() {
 	 */
 	require __DIR__ . '/eat-page-template-parts/dinner-choice-menu.php';
 
-	echo '<img class="eat-page-icons" src="' . $lunch_choice_menu_icon_middle . '"/>';
 
 	/**
 	 * Insert Dinner Choice Menu Group Template Part

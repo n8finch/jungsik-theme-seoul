@@ -92,4 +92,5 @@ foreach ( $lunch_sweet_menu_items as $row ) {
 
 echo '</div>';
 
+echo '<img class="eat-page-icons" src="' . $lunch_choice_menu_icon_middle . '"/>';
 echo '</div>'; //end lunch-choice-menu-items

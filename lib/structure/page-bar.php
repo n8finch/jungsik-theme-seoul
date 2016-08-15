@@ -107,10 +107,10 @@ function add_bar_page_contents() {
 
 	echo '<h3>* indicates the dish is not available in this size.</h3>';
 
+	echo '<img class="eat-page-icons" src="' . $bar_menu_icon_bottom. '"/>';
 
 	echo '</div><!--//end bar-menu-items-->';
 
-	echo '<img class="eat-page-icons" src="' . $bar_menu_icon_bottom. '"/>';
 
 	echo '</div>'; //end bar-page-container
 

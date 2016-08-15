@@ -1878,6 +1878,14 @@ h3 {
   font-size: 1.2rem;
 }
 
+.bar-page-container {
+  min-height: 80vh;
+  position: relative;
+}
+.bar-page-container .eat-page-icons {
+  margin-top: 20px;
+}
+
 .bar-page-menu-links {
   padding: 10px 0;
   display: flex;
@@ -1957,9 +1965,6 @@ h3 {
   clear: both;
   content: "";
   display: block;
-}
-#bar-menu-items .eat-page-icons {
-  margin-top: 20px;
 }
 #bar-menu-items .appetizer-menu-items {
   float: left;

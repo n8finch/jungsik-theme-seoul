@@ -2,6 +2,15 @@ h3 {
   font-size: 1.2rem;
 }
 
+.bar-page-container {
+  min-height: 80vh;
+  position: relative;
+
+  .eat-page-icons {
+    margin-top: 20px;
+  }
+}
+
 .bar-page-menu-links {
   padding: 10px 0;
   display: flex;
@@ -63,10 +72,6 @@ h3 {
 
   @include outer-container;
   $mobile: new-breakpoint(max-width 600px 4);
-
-  .eat-page-icons {
-    margin-top: 20px;
-  }
 
   .appetizer-menu-items {
 

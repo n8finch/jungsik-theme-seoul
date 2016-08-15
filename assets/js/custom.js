@@ -27,6 +27,10 @@
     var $dinnerChoiceMenuItemsGroup = $('#dinner-choice-menu-items-group');
     var $dinnerTastingMenuItems = $('#dinner-tasting-menu-items');
 
+    var $barIntroLink = $('#bar-intro');
+    var $barMenuLink = $('#bar-menu');
+    var $barIntroduction = $('.bar-introduction-section');
+    var $barMenuItems = $('#bar-menu-items');
 
 
     /**
@@ -41,21 +45,21 @@
     $($dinnerChoiceMenuItemsGroup).hide();
     $($dinnerTastingMenuItems).hide();
 
-
+    //Hide Bar Menu on Load
+    $($barMenuItems).hide();
 
     /**
      * Click events to show page elements
      */
 
     //Hello Page show elements
-    $($staffNameLinks).click(function(event) {
+    $($staffNameLinks).click(function (event) {
       event.preventDefault();
       var $bioToShow = $(this).attr('data-staff-pair');
       $bioToShow = '#' + $bioToShow;
       $($staffBios).slideUp();
       $($bioToShow).slideDown();
     });
-
 
 
     // Eat Page show elements
@@ -72,7 +76,6 @@
       $($choiceMenuItems).slideUp();
       $($tastingMenuItems).slideUp();
       $($lunchTastingMenuItems).slideDown();
-
     });
 
     $($dinnerChoiceMenuLink).click(function () {
@@ -90,6 +93,20 @@
       $($dinnerTastingMenuItems).slideDown();
     });
 
+
+    //Bar Page Elements
+    $($barIntroLink).click(function () {
+      event.preventDefault();
+      $($barMenuItems).slideUp();
+      $($barIntroduction).slideDown();
+    });
+
+    $($barMenuLink).click(function () {
+      event.preventDefault();
+      $($barIntroduction).slideUp();
+      $($barMenuItems).slideDown();
+
+    });
 
   });
 
