@@ -10,11 +10,24 @@
 
     //Cache variables
     var $staffBios = $('.staff-bios');
-    var $choiceMenuLink = $('#choice-menu-link');
-    var $tastingMenuLink = $('#tasting-menu-link');
-    var $tastingChoiceMenu = $('.tasting-menu-items');
-    var $choiceMenuItems = $('.choice-menu-items');
     var $staffNameLinks = $('.staff-name-links');
+
+    var $choiceMenuItems = $('.choice-menu-items');
+    var $tastingMenuItems = $('.tasting-menu-items');
+
+    var $lunchChoiceMenuLink = $('#lunch-choice-menu-link');
+    var $lunchTastingMenuLink = $('#lunch-tasting-menu-link');
+    var $dinnerChoiceMenuLink = $('#dinner-choice-menu-link');
+    var $dinnerTastingMenuLink = $('#dinner-tasting-menu-link');
+
+    var $lunchChoiceMenuItems = $('#lunch-choice-menu-items');
+    var $lunchChoiceMenuItemsGroup = $('#lunch-choice-menu-items-group');
+    var $lunchTastingMenuItems = $('#lunch-tasting-menu-items');
+    var $dinnerChoiceMenuItems = $('#dinner-choice-menu-items');
+    var $dinnerChoiceMenuItemsGroup = $('#dinner-choice-menu-items-group');
+    var $dinnerTastingMenuItems = $('#dinner-tasting-menu-items');
+
+
 
     /**
      * Hide necessary elements on page load
@@ -23,7 +36,12 @@
     $($staffBios).hide();
 
     //Hide Eat page elements
-    // $($tastingChoiceMenu).hide();
+    $($lunchTastingMenuItems).hide();
+    $($dinnerChoiceMenuItems).hide();
+    $($dinnerChoiceMenuItemsGroup).hide();
+    $($dinnerTastingMenuItems).hide();
+
+
 
     /**
      * Click events to show page elements
@@ -41,15 +59,28 @@
 
 
     // Eat Page show elements
-    // $($choiceMenuLink).click(function () {
-    //   $($tastingChoiceMenu).slideUp();
-    //   $($choiceMenuItems).slideDown();
-    // });
-    //
-    // $($tastingMenuLink).click(function () {
-    //   $($choiceMenuItems).slideUp();
-    //   $($tastingChoiceMenu).slideDown();
-    // });
+    $($lunchChoiceMenuLink).click(function () {
+      event.preventDefault();
+      $($choiceMenuItems).slideUp();
+      $($tastingMenuItems).slideUp();
+      $($lunchChoiceMenuItems).slideDown();
+      $($lunchChoiceMenuItemsGroup).slideDown();
+    });
+
+    $($lunchTastingMenuLink).click(function () {
+      event.preventDefault();
+
+      $('.eat-page-menu-items').append($lunchTastingMenuItems);
+
+
+    });
+
+    $($dinnerChoiceMenuLink).click(function () {
+      event.preventDefault();
+      $($choiceMenuItems).slideUp();
+      $($tastingMenuItems).slideUp();
+      $($dinnerChoiceMenuItems).slideDown();
+    });
 
 
   });

@@ -1,5 +1,5 @@
 <?php
-echo '<div class="choice-menu-items">';
+echo '<div id="lunch-choice-menu-items" class="choice-menu-items">';
 
 echo '<img class="eat-page-icons" src="' . $lunch_choice_menu_icon_top . '"/>';
 
@@ -91,3 +91,5 @@ foreach ( $lunch_sweet_menu_items as $row ) {
 }
 
 echo '</div>';
+
+echo '</div>'; //end lunch-choice-menu-items

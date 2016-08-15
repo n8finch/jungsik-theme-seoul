@@ -1,6 +1,6 @@
 <?php
 
-echo '<div class="tasting-menu-items">';
+echo '<div id="dinner-tasting-menu-items" class="tasting-menu-items">';
 
 echo '<img class="eat-page-icons" src="' . $dinner_tasting_menu_icon_top . '"/>';
 

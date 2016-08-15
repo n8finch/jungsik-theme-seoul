@@ -1869,6 +1869,157 @@ h3 {
   margin: 20px auto;
 }
 
+.photo-slider-container {
+  background-color: #fff;
+  height: 100%;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+.bar-page-menu-links {
+  padding: 10px 0;
+  display: flex;
+  max-width: 700px;
+  margin: 20px auto 0;
+}
+.bar-page-menu-links .bar-page-menu-link {
+  font-size: 1.2rem;
+  padding: 0 1%;
+  text-transform: uppercase;
+  font-weight: 600;
+  flex: 1;
+}
+@media only screen and (max-width: 600px) {
+  .bar-page-menu-links .bar-page-menu-link {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+.bar-introduction-section {
+  margin-top: 20px;
+}
+.bar-introduction-section .bar-intro {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-left: 17.05961%;
+  margin-top: 50px;
+}
+.bar-introduction-section .bar-intro:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 1023px) {
+  .bar-introduction-section .bar-intro {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0;
+  }
+  .bar-introduction-section .bar-intro:last-child {
+    margin-right: 0;
+  }
+}
+.bar-introduction-section .bar-slider {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 40.29137%;
+  max-width: 100%;
+}
+.bar-introduction-section .bar-slider:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 1023px) {
+  .bar-introduction-section .bar-slider {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+  }
+  .bar-introduction-section .bar-slider:last-child {
+    margin-right: 0;
+  }
+}
+
+#bar-menu-items {
+  margin-top: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#bar-menu-items::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+#bar-menu-items .eat-page-icons {
+  margin-top: 20px;
+}
+#bar-menu-items .appetizer-menu-items {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 25.58941%;
+}
+#bar-menu-items .appetizer-menu-items:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  #bar-menu-items .appetizer-menu-items {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  #bar-menu-items .appetizer-menu-items:last-child {
+    margin-right: 0;
+  }
+}
+#bar-menu-items .appetizer-menu-items .appetizer-menu-item {
+  margin: 20px auto;
+}
+#bar-menu-items .main-menu-items,
+#bar-menu-items .side-and-sweet-menu-items {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  margin-left: 0%;
+}
+#bar-menu-items .main-menu-items div,
+#bar-menu-items .side-and-sweet-menu-items div {
+  margin: 20px auto;
+}
+#bar-menu-items .main-menu-items:last-child,
+#bar-menu-items .side-and-sweet-menu-items:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 600px) {
+  #bar-menu-items .main-menu-items,
+  #bar-menu-items .side-and-sweet-menu-items {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%;
+    margin-left: 0%;
+  }
+  #bar-menu-items .main-menu-items:last-child,
+  #bar-menu-items .side-and-sweet-menu-items:last-child {
+    margin-right: 0;
+  }
+}
+#bar-menu-items h3 {
+  clear: both;
+}
+
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {

@@ -1,6 +1,6 @@
 <?php
 //Start Group Choice Menu Section
-echo '<div class="choice-menu-items">';
+echo '<div id="dinner-choice-menu-items-group" class="choice-menu-items">';
 
 echo '<h3>Group</h3>';
 

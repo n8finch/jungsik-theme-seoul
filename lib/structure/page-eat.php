@@ -77,10 +77,10 @@ function add_bar_page_contents() {
 
 	//Eat page Menu Links
 	echo '<div class="eat-page-menu-links">';
-	echo '<a id="choice-menu-link" class="eat-page-menu-link" href="#">Choice Lunch</a>';
-	echo '<a id="tasting-menu-link" class="eat-page-menu-link" href="#">Tasting Lunch</a>';
-	echo '<a id="choice-menu-link" class="eat-page-menu-link" href="#">Choice Dinner</a>';
-	echo '<a id="tasting-menu-link" class="eat-page-menu-link" href="#">Tasting Dinner</a>';
+	echo '<a id="lunch-choice-menu-link" class="eat-page-menu-link" href="#">Choice Lunch</a>';
+	echo '<a id="lunch-tasting-menu-link" class="eat-page-menu-link" href="#">Tasting Lunch</a>';
+	echo '<a id="dinner-choice-menu-link" class="eat-page-menu-link" href="#">Choice Dinner</a>';
+	echo '<a id="dinner-tasting-menu-link" class="eat-page-menu-link" href="#">Tasting Dinner</a>';
 	echo '<a class="eat-page-menu-link" href="' . $dinner_wine_list_seoul . '" target="_blank">Wine List</a>';
 	echo '</div>';
 
