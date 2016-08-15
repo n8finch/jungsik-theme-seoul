@@ -69,9 +69,9 @@
 
     $($lunchTastingMenuLink).click(function () {
       event.preventDefault();
-
-      $('.eat-page-menu-items').append($lunchTastingMenuItems);
-
+      $($choiceMenuItems).slideUp();
+      $($tastingMenuItems).slideUp();
+      $($lunchTastingMenuItems).slideDown();
 
     });
 
@@ -80,6 +80,14 @@
       $($choiceMenuItems).slideUp();
       $($tastingMenuItems).slideUp();
       $($dinnerChoiceMenuItems).slideDown();
+      $($dinnerChoiceMenuItemsGroup).slideDown();
+    });
+
+    $($dinnerTastingMenuLink).click(function () {
+      event.preventDefault();
+      $($choiceMenuItems).slideUp();
+      $($tastingMenuItems).slideUp();
+      $($dinnerTastingMenuItems).slideDown();
     });
 
 
