@@ -102,3 +102,13 @@ foreach ( $lunch_sweet_menu_items as $row ) {
 }
 
 echo '</div>';
+
+echo '<div style="clear: both;">';
+echo '<p class="tasting-menu-price clear">'.$lunch_choice_group_course_option_1.'</p>';
+echo '<p class="wine-pairing-price clear">'.$lunch_choice_group_course_option_2.'</p>';
+
+echo '<!--group bottom--><img class="eat-page-icons" src="' . $lunch_choice_menu_icon_bottom . '"/>';
+echo '</div>';
+
+echo '</div>';
+

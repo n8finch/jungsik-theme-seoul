@@ -92,4 +92,9 @@ foreach ( $dinner_sweet_menu_items as $row ) {
 
 echo '</div>';
 
+echo '<div style="clear: both;">';
+echo '<p class="tasting-menu-price clear">'.$dinner_choice_group_course_option_1.'</p>';
+echo '<p class="tasting-menu-price clear">'.$dinner_choice_group_course_option_2.'</p>';
+echo '</div>';
+
 echo '</div>'; //end dinner-choice-menu-items

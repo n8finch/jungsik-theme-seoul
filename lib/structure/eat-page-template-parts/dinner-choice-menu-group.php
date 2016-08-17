@@ -103,4 +103,9 @@ foreach ( $dinner_sweet_menu_items as $row ) {
 
 echo '</div>';
 
-echo '<img class="eat-page-icons" src="' . $dinner_choice_menu_icon_middle . '"/>';
+echo '<div style="clear: both;">';
+echo '<p class="tasting-menu-price clear">'.$dinner_choice_group_course_option_2.'</p>';
+
+echo '<img class="eat-page-icons" src="' . $dinner_choice_menu_icon_bottom . '"/>';
+echo '</div>';
+

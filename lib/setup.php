@@ -60,8 +60,8 @@ function add_theme_supports() {
 		'genesis-after-entry-widget-area' => null,
 		'genesis-footer-widgets'          => '3',
 		'genesis-menus'                   => array(
-			'primary'   => __( 'Primary', 'CHILD_TEXT_DOMAIN' ),
-			'footer' => __( 'Footer', 'CHILD_TEXT_DOMAIN' )
+			'primary' => __( 'Primary', 'CHILD_TEXT_DOMAIN' ),
+			'footer'  => __( 'Footer', 'CHILD_TEXT_DOMAIN' )
 		),
 
 	); // end $config array
@@ -73,6 +73,21 @@ function add_theme_supports() {
 
 //* Add Image Sizes
 	add_image_size( 'featured-image', 720, 400, true );
+
+	//* Unregister content/sidebar layout setting
+	genesis_unregister_layout( 'content-sidebar' );
+
+	//* Unregister sidebar/content layout setting
+	genesis_unregister_layout( 'sidebar-content' );
+
+	//* Unregister content/sidebar/sidebar layout setting
+	genesis_unregister_layout( 'content-sidebar-sidebar' );
+
+	//* Unregister sidebar/sidebar/content layout setting
+	genesis_unregister_layout( 'sidebar-sidebar-content' );
+
+	//* Unregister sidebar/content/sidebar layout setting
+	genesis_unregister_layout( 'sidebar-content-sidebar' );
 
 }
 
@@ -106,11 +121,11 @@ add_filter( 'genesis_theme_settings_defaults', __NAMESPACE__ . '\set_theme_setti
  *
  * @return array
  */
-function set_theme_settings_defaults( array $defaults) {
+function set_theme_settings_defaults( array $defaults ) {
 
 	$config = get_theme_settings_defaults();
 
-	$defaults = wp_parse_args( $config, $defaults);
+	$defaults = wp_parse_args( $config, $defaults );
 
 	return $defaults;
 }
@@ -144,7 +159,7 @@ function update_theme_settings_defaults() {
  */
 function get_theme_settings_defaults() {
 
-	return array (
+	return array(
 		'blog_cat_num'              => 12,
 		'content_archive'           => 'full',
 		'content_archive_limit'     => 0,
