@@ -799,6 +799,12 @@ th:first-child {
     max-width: 100%;
   }
 }
+@media only screen and (max-width: 860px) {
+  .site-inner,
+  .wrap {
+    padding: 0;
+  }
+}
 
 .site-inner {
   clear: both;
@@ -2348,10 +2354,6 @@ h3 {
   body {
     font-size: 18px;
     font-size: 1.8rem;
-  }
-
-  .site-inner {
-    padding: 5% 5% 0;
   }
 
   .wrap {
