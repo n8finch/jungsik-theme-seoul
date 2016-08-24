@@ -127,7 +127,7 @@ function add_bar_page_contents() {
 
 
 
-	echo '<a href="http://www.facebook.com/sharer.php?u=' . get_permalink( $post_ID ) . '" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/intent/tweet?url=' . get_permalink( $post_ID ) . '%2F&text=Check%20this%20out:%20&via=jungsikdang" target="_blank"><span class="fa fa-twitter fa"></span></a>';
+	echo '<a href="https://www.facebook.com/pages/%EC%A0%95%EC%8B%9D%EB%8B%B9-%EC%84%9C%EC%9A%B8-Jungsik-Seoul/812195042136021?hc_ref=SEARCH" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/JUNGSIKDANG" target="_blank"><span class="fa fa-twitter fa"></span></a>';
 	echo '</div>'; // end eat-page-menu-items
 
 }

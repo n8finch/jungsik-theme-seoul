@@ -32,6 +32,8 @@ function add_bar_page_contents() {
 		     '</div>';
 	}
 
+	echo '<div class="press-item"><a href="https://www.facebook.com/pages/%EC%A0%95%EC%8B%9D%EB%8B%B9-%EC%84%9C%EC%9A%B8-Jungsik-Seoul/812195042136021?hc_ref=SEARCH" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/JUNGSIKDANG" target="_blank"><span class="fa fa-twitter fa"></span></a></div>';
+
 	echo '</div>';
 }
 

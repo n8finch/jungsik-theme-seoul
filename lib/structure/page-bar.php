@@ -111,6 +111,7 @@ function add_bar_page_contents() {
 
 	echo '</div><!--//end bar-menu-items-->';
 
+	echo '<div class="eat-page-icons" style="position: static; bottom: 0; right: 50%;"><a href="https://www.facebook.com/jungsikbar/" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/JUNGSIKDANG" target="_blank"><span class="fa fa-twitter fa"></span></a></div>';
 
 	echo '</div>'; //end bar-page-container
 
