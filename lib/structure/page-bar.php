@@ -50,6 +50,24 @@ function add_bar_page_contents() {
 
 	echo '<img class="eat-page-icons" src="' . $bar_menu_icon_top. '"/>';
 
+	echo '<div class="toj-menu-items">';
+
+	echo '<h3 class="choice-menu-items-headers">Taste of Jungsik</h3>';
+
+	foreach ( $bar_appetizer_menu_items as $row ) {
+		echo '<div class="appetizer-menu-item">' .
+		     $row['appetizer_name_korean'] .
+		     '<br/>' .
+		     $row['appetizer_name_english'] .
+		     '<br/>' .
+		     $row['appetizer_description'] .
+		     '<br/>' .
+		     $row['appetizer_price'] .
+		     '</div>';
+	}
+
+	echo '</div>';
+
 	echo '<div class="appetizer-menu-items">';
 
 	echo '<h3 class="choice-menu-items-headers">Appetizers</h3>';

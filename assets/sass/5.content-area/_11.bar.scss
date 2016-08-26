@@ -73,10 +73,10 @@ h3 {
   @include outer-container;
   $mobile: new-breakpoint(max-width 600px 4);
 
-  .appetizer-menu-items {
+  .toj-menu-items {
 
     @include span-columns(2);
-    @include shift(3);
+    @include shift(2);
 
     @include media($mobile) {
       @include span-columns(4);
@@ -88,6 +88,7 @@ h3 {
     }
   }
 
+  .appetizer-menu-items,
   .main-menu-items,
   .side-and-sweet-menu-items {
 
