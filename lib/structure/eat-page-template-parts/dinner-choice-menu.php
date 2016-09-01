@@ -23,7 +23,7 @@ echo '</div>';
 
 echo '<div class="rice-noodle-menu-items">';
 
-echo '<h3 class="choice-menu-items-headers">Rice / Noodle</h3>';
+echo '<h3 class="choice-menu-items-headers">Rice</h3>';
 
 foreach ( $dinner_rice_menu_items as $row ) {
 	echo '<div class="appetizer-menu-item">' .
