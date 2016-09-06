@@ -23,6 +23,7 @@ function add_bar_page_contents() {
 	$bar_wine_and_spirits_list_upload = get_field('bar_wine_and_spirits_list_upload');
 
 	//Bar Menu Section
+	$bar_toj_menu_items = get_field('bar_toj_menu_items');
 	$bar_appetizer_menu_items = get_field('bar_appetizer_menu_items');
 	$bar_main_menu_items = get_field('bar_main_menu_items');
 	$bar_sweet_and_sweet_menu_items = get_field('bar_sweet_and_sweet_menu_items');
@@ -54,15 +55,21 @@ function add_bar_page_contents() {
 
 	echo '<h3 class="choice-menu-items-headers">Taste of Jungsik</h3>';
 
-	foreach ( $bar_appetizer_menu_items as $row ) {
+	foreach ( $bar_toj_menu_items as $row ) {
+
+		$row_description = '';
+
+		if ( $row['appetizer_description'] ) {
+			$row_description = '<br/>' . $row['toj_description'];
+		}
+
 		echo '<div class="appetizer-menu-item">' .
-		     $row['appetizer_name_korean'] .
+		     '<span class="menu-item-header">' . $row['toj_name_korean'] . '</span>' .
 		     '<br/>' .
-		     $row['appetizer_name_english'] .
+		     '<span class="menu-item-header">' . $row['toj_name_english'] . '</span>' .
+		     $row_description .
 		     '<br/>' .
-		     $row['appetizer_description'] .
-		     '<br/>' .
-		     $row['appetizer_price'] .
+		     $row['toj_price'] .
 		     '</div>';
 	}
 
@@ -73,12 +80,17 @@ function add_bar_page_contents() {
 	echo '<h3 class="choice-menu-items-headers">Appetizers</h3>';
 
 	foreach ( $bar_appetizer_menu_items as $row ) {
+		$row_description = '';
+
+		if ( $row['appetizer_description'] ) {
+			$row_description = '<br/>' . $row['appetizer_description'];
+		}
+
 		echo '<div class="appetizer-menu-item">' .
-		     $row['appetizer_name_korean'] .
+		     '<span class="menu-item-header">' . $row['appetizer_name_korean'] . '</span>' .
 		     '<br/>' .
-		     $row['appetizer_name_english'] .
-		     '<br/>' .
-		     $row['appetizer_description'] .
+		     '<span class="menu-item-header">' . $row['appetizer_name_english'] . '</span>' .
+		     $row_description .
 		     '<br/>' .
 		     $row['appetizer_price'] .
 		     '</div>';
@@ -91,12 +103,18 @@ function add_bar_page_contents() {
 	echo '<h3 class="choice-menu-items-headers">Main</h3>';
 
 	foreach ( $bar_main_menu_items as $row ) {
+
+		$row_description = '';
+
+		if ( $row['appetizer_description'] ) {
+			$row_description = '<br/>' . $row['toj_description'];
+		}
+
 		echo '<div class="appetizer-menu-item">' .
-		     $row['bar_dish_name_korean'] .
+		     '<span class="menu-item-header">' . $row['bar_dish_name_korean'] . '</span>' .
 		     '<br/>' .
-		     $row['bar_dish_name_english'] .
-		     '<br/>' .
-		     $row['bar_dish_description'] .
+		     '<span class="menu-item-header">' . $row['bar_dish_name_english'] . '</span>' .
+		     $row_description .
 		     '<br/>' .
 		     $row['bar_dish_price'] .
 		     '</div>';
@@ -109,12 +127,18 @@ function add_bar_page_contents() {
 	echo '<h3 class="choice-menu-items-headers">Side & Sweet</h3>';
 
 	foreach ( $bar_sweet_and_sweet_menu_items as $row ) {
+
+		$row_description = '';
+
+		if ( $row['appetizer_description'] ) {
+			$row_description = '<br/>' . $row['toj_description'];
+		}
+
 		echo '<div class="appetizer-menu-item">' .
-		     $row['side_and_sweet_name_korean'] .
+		     '<span class="menu-item-header">' . $row['side_and_sweet_name_korean'] . '</span>' .
 		     '<br/>' .
-		     $row['side_and_sweet_name_english'] .
-		     '<br/>' .
-		     $row['side_and_sweet_description'] .
+		     '<span class="menu-item-header">' . $row['side_and_sweet_name_english'] . '</span>' .
+		     $row_description .
 		     '<br/>' .
 		     $row['side_and_sweet_price'] .
 		     '</div>';

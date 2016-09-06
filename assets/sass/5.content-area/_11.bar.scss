@@ -71,12 +71,13 @@ h3 {
 
 
   @include outer-container;
+
   $mobile: new-breakpoint(max-width 600px 4);
 
   .toj-menu-items {
 
-    @include span-columns(2);
-    @include shift(2);
+    @include span-columns(1.5);
+    @include shift(3);
 
     @include media($mobile) {
       @include span-columns(4);
@@ -92,13 +93,15 @@ h3 {
   .main-menu-items,
   .side-and-sweet-menu-items {
 
+    $gutter: 1em;
+
     div {
 
       margin: 20px auto;
 
     }
 
-    @include span-columns(2);
+    @include span-columns(1.5);
     @include shift(0);
 
     @include media($mobile) {

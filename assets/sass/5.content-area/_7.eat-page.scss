@@ -39,6 +39,7 @@ h3 {
 
 
   @include outer-container;
+  $tablet: new-breakpoint(max-width 1023px 12);
   $mobile: new-breakpoint(max-width 600px 4);
 
   .appetizer-menu-items {
@@ -81,8 +82,11 @@ h3 {
 
 .choice-menu-items-headers {
   font-size: 1.2rem;
-  text-transform: uppercase;
   margin: 20px auto;
+}
+
+.menu-item-header {
+  letter-spacing: 2px;
 }
 
 .tasting-menu-items {
