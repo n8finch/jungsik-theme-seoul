@@ -40,7 +40,7 @@
     $($staffBios).hide();
 
     //Hide Eat page elements
-    $($lunchTastingMenuItems).hide();
+    // $($lunchTastingMenuItems).hide();
     $($dinnerChoiceMenuItems).hide();
     $($dinnerChoiceMenuItemsGroup).hide();
     $($dinnerTastingMenuItems).hide();
@@ -69,14 +69,16 @@
       $($tastingMenuItems).slideUp();
       $($lunchChoiceMenuItems).slideDown();
       $($lunchChoiceMenuItemsGroup).slideDown();
+      $($lunchTastingMenuItems).slideDown();
+
     });
 
-    $($lunchTastingMenuLink).click(function () {
-      event.preventDefault();
-      $($choiceMenuItems).slideUp();
-      $($tastingMenuItems).slideUp();
-      $($lunchTastingMenuItems).slideDown();
-    });
+    // $($lunchTastingMenuLink).click(function () {
+    //   event.preventDefault();
+    //   $($choiceMenuItems).slideUp();
+    //   $($tastingMenuItems).slideUp();
+    //   $($lunchTastingMenuItems).slideDown();
+    // });
 
     $($dinnerChoiceMenuLink).click(function () {
       event.preventDefault();
@@ -84,14 +86,16 @@
       $($tastingMenuItems).slideUp();
       $($dinnerChoiceMenuItems).slideDown();
       $($dinnerChoiceMenuItemsGroup).slideDown();
+      $($dinnerTastingMenuItems).slideDown();
+
     });
 
-    $($dinnerTastingMenuLink).click(function () {
-      event.preventDefault();
-      $($choiceMenuItems).slideUp();
-      $($tastingMenuItems).slideUp();
-      $($dinnerTastingMenuItems).slideDown();
-    });
+    // $($dinnerTastingMenuLink).click(function () {
+    //   event.preventDefault();
+    //   $($choiceMenuItems).slideUp();
+    //   $($tastingMenuItems).slideUp();
+    //   $($dinnerTastingMenuItems).slideDown();
+    // });
 
 
     //Bar Page Elements

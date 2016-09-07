@@ -32,6 +32,7 @@ function add_bar_page_contents() {
 	$lunch_choice_menu_icon_bottom      = get_field( 'lunch_choice_menu_icon_bottom' );
 	$lunch_choice_group_course_option_1 = get_field( 'lunch_choice_group_course_option_1' );
 	$lunch_choice_group_course_option_2 = get_field( 'lunch_choice_group_course_option_2' );
+	$lunch_group_notice                 = get_field( 'lunch_group_notice' );
 
 	//Lunch Tasting Menu Items
 	$lunch_tasting_menu_title                = get_field( 'lunch_tasting_menu_title' );
@@ -57,6 +58,7 @@ function add_bar_page_contents() {
 	$dinner_choice_menu_icon_bottom      = get_field( 'dinner_choice_menu_icon_bottom' );
 	$dinner_choice_group_course_option_1 = get_field( 'dinner_choice_group_course_option_1' );
 	$dinner_choice_group_course_option_2 = get_field( 'dinner_choice_group_course_option_2' );
+	$dinner_group_notice                 = get_field( 'dinner_group_notice' );
 
 	//Dinner Tasting Menu Items
 	$dinner_tasting_menu_title                = get_field( 'dinner_tasting_menu_title' );
@@ -77,10 +79,10 @@ function add_bar_page_contents() {
 
 	//Eat page Menu Links
 	echo '<div class="eat-page-menu-links">';
-	echo '<a id="lunch-choice-menu-link" class="eat-page-menu-link" href="#">Choice Lunch</a>';
-	echo '<a id="lunch-tasting-menu-link" class="eat-page-menu-link" href="#">Tasting Lunch</a>';
-	echo '<a id="dinner-choice-menu-link" class="eat-page-menu-link" href="#">Choice Dinner</a>';
-	echo '<a id="dinner-tasting-menu-link" class="eat-page-menu-link" href="#">Tasting Dinner</a>';
+	echo '<a id="lunch-choice-menu-link" class="eat-page-menu-link" href="#">Lunch</a>';
+//	echo '<a id="lunch-tasting-menu-link" class="eat-page-menu-link" href="#">Tasting Lunch</a>';
+	echo '<a id="dinner-choice-menu-link" class="eat-page-menu-link" href="#">Dinner</a>';
+//	echo '<a id="dinner-tasting-menu-link" class="eat-page-menu-link" href="#">Tasting Dinner</a>';
 	echo '<a class="eat-page-menu-link" href="' . $dinner_wine_list_seoul . '" target="_blank">Wine List</a>';
 	echo '</div>';
 
@@ -95,16 +97,15 @@ function add_bar_page_contents() {
 	/**
 	 * Insert Lunch Choice Menu Group Template Part
 	 */
-	require __DIR__ . '/eat-page-template-parts/lunch-choice-menu-group.php';
+//	require __DIR__ . '/eat-page-template-parts/lunch-choice-menu-group.php';
 
-	echo '</div>'; // end choice-menu-items
+//	echo '</div>'; // end choice-menu-items
 
 
 	/**
-	 * Insert Lunch Tasting Menu Group Template Part
+	 * Insert Lunch Tasting Menu Template Part
 	 */
 	require __DIR__ . '/eat-page-template-parts/lunch-tasting-menu.php';
-
 
 
 	/**
@@ -116,15 +117,14 @@ function add_bar_page_contents() {
 	/**
 	 * Insert Dinner Choice Menu Group Template Part
 	 */
-	require __DIR__ . '/eat-page-template-parts/dinner-choice-menu-group.php';
-
-	echo '</div>'; // end choice-menu-items
+//	require __DIR__ . '/eat-page-template-parts/dinner-choice-menu-group.php';
+//
+//	echo '</div>'; // end choice-menu-items
 
 	/**
 	 * Insert Dinner Tasting Menu Group Template Part
 	 */
 	require __DIR__ . '/eat-page-template-parts/dinner-tasting-menu.php';
-
 
 
 	echo '<a href="https://www.facebook.com/pages/%EC%A0%95%EC%8B%9D%EB%8B%B9-%EC%84%9C%EC%9A%B8-Jungsik-Seoul/812195042136021?hc_ref=SEARCH" target="_blank"><span class="fa fa-facebook fa"></span></a> | 	<a class="twitter" href="https://twitter.com/JUNGSIKDANG" target="_blank"><span class="fa fa-twitter fa"></span></a>';

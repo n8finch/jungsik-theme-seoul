@@ -8,9 +8,9 @@ echo '<p>' . $dinner_tasting_menu_title . '</p>';
 
 foreach ( $dinner_tasting_menu_selections as $row ) {
 	echo '<div class="tasting-menu-item">' .
-	     $row['dinner_tasting_item_name_korean'] .
+	     '<span class="menu-item-header">' . $row['dinner_tasting_item_name_korean'] . '</span>' .
 	     '<br/>' .
-	     $row['dinner_tasting_item_name_english'] .
+	     '<span class="menu-item-header">' .  $row['dinner_tasting_item_name_english'] . '</span>' .
 	     '<br/>' .
 	     $row['dinner_tasting_item_description'] .
 	     '</div>';
@@ -25,9 +25,9 @@ echo '<p>' . $dinner_tasting_menu_title_signature . '</p>';
 
 foreach ( $dinner_tasting_menu_selections_signature as $row ) {
 	echo '<div class="tasting-menu-item">' .
-	     $row['dinner_tasting_item_name_korean_signature'] .
+	     '<span class="menu-item-header">' . $row['dinner_tasting_item_name_korean_signature'] . '</span>' .
 	     '<br/>' .
-	     $row['dinner_tasting_item_name_english_signature'] .
+	     '<span class="menu-item-header">' . $row['dinner_tasting_item_name_english_signature'] . '</span>' .
 	     '<br/>' .
 	     $row['dinner_tasting_item_description_signature'] .
 	     '</div>';

@@ -5,8 +5,9 @@ h3 {
 .eat-page-menu-links {
   padding: 10px 0;
   display: flex;
-  max-width: 700px;
+  max-width: 450px;
   margin: 20px auto 0;
+  letter-spacing: 4px;
 
 
   .eat-page-menu-link {
@@ -44,8 +45,13 @@ h3 {
 
   .appetizer-menu-items {
 
-    @include span-columns(2);
-    @include shift(1);
+    @include span-columns(1.2);
+    @include shift(3);
+
+    @include media($tablet) {
+      @include span-columns(2);
+      @include shift(1);
+    }
 
     @include media($mobile) {
       @include span-columns(4);
@@ -68,8 +74,13 @@ h3 {
 
     }
 
-    @include span-columns(2);
+    @include span-columns(1.2);
     @include shift(0);
+
+    @include media($tablet) {
+      @include span-columns(2);
+      @include shift(0);
+    }
 
     @include media($mobile) {
       @include span-columns(4);
@@ -86,7 +97,7 @@ h3 {
 }
 
 .menu-item-header {
-  letter-spacing: 2px;
+  letter-spacing: 0;
 }
 
 .tasting-menu-items {

@@ -1700,8 +1700,9 @@ h3 {
 .eat-page-menu-links {
   padding: 10px 0;
   display: flex;
-  max-width: 700px;
+  max-width: 450px;
   margin: 20px auto 0;
+  letter-spacing: 4px;
 }
 .eat-page-menu-links .eat-page-menu-link {
   font-size: 1.2rem;
@@ -1738,11 +1739,23 @@ h3 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%;
-  margin-left: 8.5298%;
+  width: 7.87811%;
+  margin-left: 25.58941%;
 }
 .choice-menu-items .appetizer-menu-items:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 1023px) {
+  .choice-menu-items .appetizer-menu-items {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 8.5298%;
+  }
+  .choice-menu-items .appetizer-menu-items:last-child {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .choice-menu-items .appetizer-menu-items {
@@ -1766,7 +1779,7 @@ h3 {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%;
+  width: 7.87811%;
   margin-left: 0%;
 }
 .choice-menu-items .rice-noodle-menu-items div,
@@ -1780,6 +1793,24 @@ h3 {
 .choice-menu-items .land-menu-items:last-child,
 .choice-menu-items .sweet-menu-items:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 1023px) {
+  .choice-menu-items .rice-noodle-menu-items,
+  .choice-menu-items .seafood-menu-items,
+  .choice-menu-items .land-menu-items,
+  .choice-menu-items .sweet-menu-items {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    margin-left: 0%;
+  }
+  .choice-menu-items .rice-noodle-menu-items:last-child,
+  .choice-menu-items .seafood-menu-items:last-child,
+  .choice-menu-items .land-menu-items:last-child,
+  .choice-menu-items .sweet-menu-items:last-child {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 600px) {
   .choice-menu-items .rice-noodle-menu-items,
@@ -1806,7 +1837,7 @@ h3 {
 }
 
 .menu-item-header {
-  letter-spacing: 2px;
+  letter-spacing: 0;
 }
 
 .tasting-menu-items .tasting-menu-item {
