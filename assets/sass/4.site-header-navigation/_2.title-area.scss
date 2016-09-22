@@ -37,6 +37,10 @@
   letter-spacing: 7px;
   clear: both;
 
+  a {
+    font-size: 13px;
+  }
+
   a,
   a:hover,
   a:focus {
@@ -81,4 +85,12 @@
   margin-bottom: 0;
 }
 
+.front-page-address-phone-image {
+  margin-top: 15px;
+  font-size: 11px;
+
+  address {
+    letter-spacing: 4px;
+  }
+}
 
