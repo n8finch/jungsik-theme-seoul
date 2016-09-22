@@ -1679,6 +1679,10 @@ address {
     margin-right: 0;
   }
 }
+.hello-page-container .hello-subtitle {
+  letter-spacing: 4px;
+  font-weight: 600;
+}
 
 .hello-page-name-position-section {
   background: url("assets/img/chef.jpg") no-repeat center;
@@ -1686,7 +1690,7 @@ address {
   height: 233px;
   padding-top: 50px;
   display: inline-block;
-  width: 310px;
+  width: 375px;
 }
 @media only screen and (max-width: 860px) {
   .hello-page-name-position-section {
@@ -1886,6 +1890,7 @@ h3 {
 
 .menu-item-header {
   letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .tasting-menu-items .tasting-menu-item {

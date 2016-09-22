@@ -21,6 +21,10 @@
 
   }
 
+  .hello-subtitle {
+    letter-spacing: 4px;
+    font-weight: 600;
+  }
 }
 
 
@@ -30,7 +34,7 @@
   height: 233px;
   padding-top: 50px;
   display: inline-block;
-  width: 310px;
+  width: 375px;
 
   @media only screen and (max-width: 860px) {
     height: 350px;
