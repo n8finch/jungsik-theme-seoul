@@ -86,6 +86,7 @@ h3 {
 
     .appetizer-menu-item {
       margin: 20px auto;
+      height: 75px;
     }
   }
 
@@ -109,6 +110,10 @@ h3 {
       @include shift(0);
     }
 
+    .appetizer-menu-item {
+      margin: 20px auto;
+      height: 75px;
+    }
 
   }
 
